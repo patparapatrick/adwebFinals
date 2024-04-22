@@ -1,0 +1,34 @@
+/* Basic styling for the form container */
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Basic styling for the input */
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 12px; /* Increased padding for larger input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90%; /* Adjusted width for larger input */
+  box-sizing: border-box; /* Include padding and border in input's total width */
+}
+
+/* Basic styling for the button */
+button {
+  padding: 12px 20px; /* Increased padding for larger button */
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Darker shade on hover for the button */
+button:hover {
+  background-color: #00796B;
+  
+}

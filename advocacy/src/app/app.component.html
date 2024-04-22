@@ -1,0 +1,22 @@
+
+<body>
+  <div class="form-container">
+    <p>Add tips in DriveSafe Advocacy</p>
+
+    <input id="newBook" type="text" placeholder="Enter a new tip (one or two sentences)">
+    <button (click)="addBook()">Add Tip</button>
+    
+    <h3>Safe Driving Tips:</h3>
+
+    <h3 *ngFor="let book of books">
+      <b>{{ book.title }}</b> 
+      <button (click)="deleteBook(book.id)">Delete Tip</button>
+    </h3>
+  </div>
+</body>
+
+
+
+
+
+

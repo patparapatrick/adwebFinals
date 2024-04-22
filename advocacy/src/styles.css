@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Light gray background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 0;
+    background-color: #4CAF50; /* Vibrant green header */
+    color: #FFFFFF; /* White text */
+}
+
+h2 {
+    font-size: 24px;
+    color: #4CAF50; /* Vibrant green text */
+}
+h3{
+    margin-bottom: -2%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50; /* Vibrant green navigation bar */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF; /* White text */
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFFFFF; /* White text */
+}
+
+nav a:hover {
+    color: #000000; /* Black text on hover */
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #000000; /* Black text for active link */
+}
+
+.container {
+    margin-top: 60px;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    color: #333333; /* Dark gray text */
+    margin-top: 20px;
+}
+
+.tips {
+    width: 100%;
+    background-color: #CDDC39; /* Lighter green background for tips */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tips ul {
+    list-style: none;
+}
+
+.tips ul li::before {
+    content: '\2605';
+    color: yellow;
+    margin-right: 0.5em;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.tips-carousel {
+    text-align: center;
+    background-color: #CDDC39; /* Lighter green background for carousel */
+    border-radius: 10px;
+}
+
+.tips-carousel button {
+    color: #FFFFFF; /* White text */
+    background-color: #009688; /* Teal button color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.tips-carousel button:hover {
+    background-color: #00796B; /* Darker teal button color on hover */
+}
+
+.tips-carousel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tips-carousel li {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.tips-carousel li:first-child {
+    display: block;
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DRIVESAFE ADVOCACY</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>DRIVESAFE ADVOCACY</h1>
+    <h4>PROMOTING SAFE DRIVING HABITS</h4>
+    <nav>
+        <a href="#rising-accident-rates" onclick="scrollToSection('rising-accident-rates')">RISING ACCIDENT RATES</a>
+        <a href="#distracted-driving" onclick="scrollToSection('distracted-driving')">DISTRACTED DRIVING</a>
+        <a href="#reckless-driving" onclick="scrollToSection('reckless-driving')">RECKLESS DRIVING</a>
+        <a href="#lack-of-awareness" onclick="scrollToSection('lack-of-awareness')">LACK OF AWARENESS</a>
+    </nav>
+
+    <div>
+      <h3 id="rising-accident-rates">RISING ACCIDENT RATES</h3>
+      <img src="assets/1.png" alt="Image1">
+      <p>
+        In our communities, rising accident rates are a major cause for concern since they seriously jeopardize road safety. The number of traffic accidents is increasing daily, underscoring the urgent need for action. In addition to causing terrible injuries and fatalities, these incidents have a large financial and social toll on society. Increasing awareness, putting in place practical preventive measures, and encouraging a culture of safe driving are all necessary components of a holistic strategy to address this problem. Road safety and the welfare of all users can be ensured by comprehending the underlying reasons behind the increase in accidents and cooperating to put workable solutions into place.
+      </p>
+      <div class="tips-carousel">
+        <h5 id="tipTitle">Tips for drivers:</h5>
+        <ul id="tipList">
+          <li>Promote Defensive Driving Techniques</li>
+          <li>Raise Awareness on Distracted Driving</li>
+          <li>Encourage Strict Obedience with Traffic Laws</li>
+        </ul>
+        <button class="prev-btn" onclick="prevTip()">Previous</button>
+        <button class="next-btn" onclick="nextTip()">Next</button>
+      </div>
+    </div>
+
+    <div>
+      <h3 id="distracted-driving">DISTRACTED DRIVING</h3>
+      <img src="assets/2.webp" alt="Image2">
+      <p>
+        Road safety is seriously threatened by distracted driving, which puts not only the driver but also other road users, pedestrians, and passengers at risk. It happens when drivers take their eyes off the road and focus on other things, like eating, talking on the phone, texting, or fiddling with entertainment systems. Even a brief distraction can have disastrous results, resulting in mishaps, injuries, and fatalities. Increasing public awareness of the risks associated with distracted driving and encouraging safe driving practices are necessary to combat it. We may try to establish a culture of alertness on the road and lower the number of accidents brought on by distracted driving by highlighting the significance of maintaining focus, minimizing distractions, and giving priority to safe driving practices.
+      </p>
+      <div class="tips-carousel">
+        <h5 id="tipTitle">Tips for drivers:</h5>
+        <ul id="tipList">
+          <li>Silence Your Phone</li>
+          <li>Plan Your Route in Advance</li>
+          <li>Designate a Co-Pilot</li>
+        </ul>
+        <button class="prev-btn" onclick="prevTip()">Previous</button>
+        <button class="next-btn" onclick="nextTip()">Next</button>
+      </div>
+    </div>
+
+    <div>
+      <h3 id="reckless-driving">RECKLESS DRIVING</h3>
+      <img src="assets/3.png" alt="Image3">
+      <p>
+        One of the main causes of accidents and fatalities on our roads is reckless driving, which is characterized by high speeds, aggressive maneuvers, and disregard for traffic laws. It includes actions that increase the danger of collisions and serious injuries, like tailgating, weaving in and out of traffic, and disobeying traffic signals. To combat reckless driving, there needs to be a special effort made to encourage safe driving practices, inform motorists of the effects of their conduct, and impose harsher fines on those who violate traffic laws. It is possible to lessen the amount of careless driving and make roads safer for all users if we promote a culture of careful and safe driving.
+      </p>
+      <div class="tips-carousel">
+        <h5 id="tipTitle">Tips for drivers:</h5>
+        <ul id="tipList">
+          <li>Stay Calm and Patient</li>
+          <li>Follow Traffic Laws</li>
+          <li>Stay Focused</li>
+        </ul>
+        <button class="prev-btn" onclick="prevTip()">Previous</button>
+        <button class="next-btn" onclick="nextTip()">Next</button>
+      </div>
+    </div>
+
+    <div>
+      <h3 id="lack-of-awareness">LACK OF AWARENESS</h3>
+      <img src="assets/4.jpg" alt="Image4">
+      <p>
+        When driving, lack of attention can result in hazardous circumstances and elevated chances of collisions. Drivers may not anticipate possible hazards or react effectively to changing road conditions when they are not completely aware of their surroundings. Numerous things, such as exhaustion, distractions, or just not paying attention, might contribute to this lack of focus. Furthermore, insufficient awareness doesn't just affect drivers; it also puts cyclists and pedestrians in danger as they don't know the traffic laws or can't see approaching cars. In order to address this problem, a concentrated effort must be made to inform all users of the road on the significance of being alert and aware at all times, to encourage better driving practices, and to develop a shared culture of accountability for road safety.
+      </p>
+      <div class="tips-carousel">
+        <h5 id="tipTitle">Tips for drivers:</h5>
+        <ul id="tipList">
+          <li>Stay Alert</li>
+          <li>Know Your Surroundings</li>
+          <li>Practice Defensive Behavior</li>
+        </ul>
+        <button class="prev-btn" onclick="prevTip()">Previous</button>
+        <button class="next-btn" onclick="nextTip()">Next</button>
+      </div>
+    </div>
+
+    <script src="carousel.js"></script>
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+// JavaScript for controlling the tips carousel
+document.querySelectorAll('.tips-carousel').forEach((carousel) => {
+    const tips = carousel.querySelectorAll('li');
+    let currentTipIndex = 0;
+
+    function showTip() {
+        tips.forEach((tip, index) => {
+            if (index === currentTipIndex) {
+                tip.style.display = 'block';
+            } else {
+                tip.style.display = 'none';
+            }
+        });
+    }
+
+    function prevTip() {
+        currentTipIndex = (currentTipIndex === 0) ? tips.length - 1 : currentTipIndex - 1;
+        showTip();
+    }
+
+    function nextTip() {
+        currentTipIndex = (currentTipIndex === tips.length - 1) ? 0 : currentTipIndex + 1;
+        showTip();
+    }
+
+    showTip();
+
+    carousel.querySelector('.prev-btn').addEventListener('click', prevTip);
+    carousel.querySelector('.next-btn').addEventListener('click', nextTip);
+});
+
+
+    </script>
+
+  <app-root></app-root>
+</body>
+</html>
